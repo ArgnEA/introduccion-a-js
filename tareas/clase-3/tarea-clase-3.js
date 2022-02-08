@@ -6,6 +6,16 @@
 // Si el nombe del usuario es el mismo que el que nombre que eligieron
 // Imprimir "Hola " y el nombre, " te llamás igual que mi ..."
 // Si no, simplemente imprimir "Hola " + nombre!
+const myName = `Emanuel`
+const userName = prompt(`¿Cual es tu nombre?`);
+const friendName = `Nick`
+if (userName.toLowerCase() === myName.toLowerCase()) {
+    console.log(`Hola, Tocayo! Yo también me llamo ${userName}`);    
+}else if (userName.toLowerCase() === friendName.toLowerCase()) {
+    console.log(`Hola, ${userName} te llamas igual que mi amigo`);
+}else{
+console.log(`Hola, ${userName}`)
+}
 
 //Tarea 2:
 // Preguntar la edad del usuario
