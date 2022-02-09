@@ -42,7 +42,7 @@
 // TAREA: Crea tu propio array, llamado comidasFavoritas, y escribi dentro algunas
 //       cosas que te gustan.
 
-
+let comidasFavoritas = [`Pizza`,`Lasagna`,`Asado`]
 
 
 
@@ -64,7 +64,7 @@
 // TAREA: Verifique cuántos valores tiene en su array comidasFavoritas.
 // imprimi utilizando console.log el resultado.
 
-
+console.log(comidasFavoritas.length);
 
 
 
@@ -91,7 +91,7 @@
 // TAREA: Obtené el tercer elemento de tu array comidasFavoritas e imprimilo utilizando console.log.
 
 
-
+console.log(comidasFavoritas[2]);
 
 
 
@@ -116,13 +116,13 @@
 // con cualquier otra cosa.
 
 
-
+comidasFavoritas[0] = `Pan`;
 
 
 
 // TAREA: console.log todo el array para verificar.
 
-
+console.log(comidasFavoritas);
 
 
 
@@ -146,7 +146,7 @@
 
 // TAREA: Extendamos tu lista de comidasFavoritas y agreguemos un valor más.
 
-
+comidasFavoritas.push(`Empanadas`);
 
 
 
@@ -154,7 +154,7 @@
 // TAREA: console.log todo el array para verificar.
 
 
-
+console.log(comidasFavoritas);
 
 
 
@@ -339,12 +339,17 @@
 // 16% 4 = 0 - en 16 tenemos 4 * 4
 // 19% 4 = 3 - en 19 tenemos 4 * 4 + 3, etc.
 
+for(let i=1; i<=100; i++) 
+			if ((i%3 == 0) && (i%5 == 0))
+				console.log(`FizzBuzz`);
+			else if (i%3 == 0)
+                    console.log(`Fizz`);
+				else if (i%5 == 0)
+                        console.log(`Buzz`);
+					else 
+                        console.log(i);
 
-
-
-
-
-//////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////
 // ¡Felicidades! ¡Has terminado el Nivel 2 de JavaScript Básico!            //
 // Levántate, estira las piernas y celebra tu logro.                        //
 // El siguiente paso será seguir las instrucciones en el archivo nivel3.js. //
